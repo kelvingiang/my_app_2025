@@ -1,0 +1,366 @@
+{
+  "id": "2002694",
+  "name": "EHM-APP（设备健康APP）",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8791338",
+      "name": "手动",
+      "font_class": "shoudong",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "30063670",
+      "name": "免检",
+      "font_class": "mianjian",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "30063671",
+      "name": "免檢",
+      "font_class": "mianjian1",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "24113381",
+      "name": "custom",
+      "font_class": "custom",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4889786",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "4889848",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "27105615",
+      "name": "差评",
+      "font_class": "chaping",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "27105616",
+      "name": "好评",
+      "font_class": "haoping",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "4765891",
+      "name": "setting",
+      "font_class": "setting",
+      "unicode": "e78f",
+      "unicode_decimal": 59279
+    },
+    {
+      "icon_id": "14831835",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "14832140",
+      "name": "取消暂停",
+      "font_class": "quxiaozanting",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "25182793",
+      "name": "star",
+      "font_class": "star2",
+      "unicode": "e845",
+      "unicode_decimal": 59461
+    },
+    {
+      "icon_id": "7546275",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e7a8",
+      "unicode_decimal": 59304
+    },
+    {
+      "icon_id": "383678",
+      "name": "空五角星",
+      "font_class": "kongwujiaoxing",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "1629916",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "2127894",
+      "name": "五角星填充",
+      "font_class": "star-full",
+      "unicode": "e81b",
+      "unicode_decimal": 59419
+    },
+    {
+      "icon_id": "18216342",
+      "name": "皇冠",
+      "font_class": "huangguan",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "18216343",
+      "name": "编组_6",
+      "font_class": "bianzu_6",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "18216344",
+      "name": "作业员",
+      "font_class": "zuoyeyuan1",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "18216345",
+      "name": "维修",
+      "font_class": "weixiu",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "18216346",
+      "name": "合格",
+      "font_class": "hege1",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "18216347",
+      "name": "形状",
+      "font_class": "xingzhuang",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "16885696",
+      "name": "电_ 话",
+      "font_class": "dian_hua",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "16885691",
+      "name": "设备商",
+      "font_class": "shebeishang",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "688060",
+      "name": "查找 表单 列表",
+      "font_class": "chazhaobiaodanliebiao",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    },
+    {
+      "icon_id": "868799",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1197062",
+      "name": "star",
+      "font_class": "star",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "1509775",
+      "name": "问号",
+      "font_class": "question",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "4767022",
+      "name": "arrowleft",
+      "font_class": "arrowleft",
+      "unicode": "e7ef",
+      "unicode_decimal": 59375
+    },
+    {
+      "icon_id": "6275362",
+      "name": "添加",
+      "font_class": "icon-test",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "7239563",
+      "name": "star",
+      "font_class": "star1",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
+      "icon_id": "13016112",
+      "name": "路径备份",
+      "font_class": "lujingbeifen",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "16360873",
+      "name": "外修",
+      "font_class": "waixiu",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "16363173",
+      "name": "计划",
+      "font_class": "jihua",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "16363220",
+      "name": "故障",
+      "font_class": "guzhang",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "16368406",
+      "name": "計畫",
+      "font_class": "jihua1",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "16671066",
+      "name": "模具",
+      "font_class": "moju",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "4936482",
+      "name": "close-circle-fill",
+      "font_class": "close-circle-fill",
+      "unicode": "e844",
+      "unicode_decimal": 59460
+    },
+    {
+      "icon_id": "287188",
+      "name": "勾选",
+      "font_class": "gouxuan",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "486905",
+      "name": "叉号",
+      "font_class": "chahao1",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "5759095",
+      "name": "三角下标（正方形）",
+      "font_class": "sanb",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "13749136",
+      "name": "扫",
+      "font_class": "sao",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "1166357",
+      "name": "搜索",
+      "font_class": "fangdajing",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "13016123",
+      "name": "作业员",
+      "font_class": "zuoyeyuan",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "16541924",
+      "name": "拍照",
+      "font_class": "paizhao",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "16541872",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "16541873",
+      "name": "录音",
+      "font_class": "luyin",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "16541874",
+      "name": "问号_(1)",
+      "font_class": "wenhao_1",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "16541875",
+      "name": "每日点检",
+      "font_class": "meiridianjian",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "16540665",
+      "name": "合格",
+      "font_class": "hege",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "16540666",
+      "name": "不合格_",
+      "font_class": "buhege_",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    }
+  ]
+}

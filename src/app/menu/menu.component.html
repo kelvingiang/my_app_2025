@@ -1,0 +1,75 @@
+<!-- 
+      tại home phải thêm phần  routerLinkActiveOptions để xóa đi class active khi không dc chọn 
+     ý nghĩa của routerLinkActiveOptions là khi active có quan hệ cha con sẽ bị active luôn cả phần cha
+    khi thêm vào {exact: true} thi phần active của cha sẽ được bỏ qua   
+  cách 1 chuyển trang
+  -->
+<!-- <div class="main-menu box"> -->
+<!-- <a class="nav-link" routerLink='' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      {{ 'basic.home' | translate | capitalize}}
+  </a> -->
+<!-- <a class="nav-link" routerLink='' routerLinkActive="active">
+    <i class="fa fa-home" aria-hidden="true" style="font-size: 1rem;"></i>
+  </a>
+  <a class="nav-link" routerLink='/load-more' routerLinkActive="active">
+    {{ 'basic.load_more' | translate }}
+  </a> -->
+<!-- <a class="nav-link" routerLink='/members' routerLinkActive="active">
+    {{'basic.member' | translate }}
+  </a> -->
+<!-- <a class="nav-link" routerLink='/xml' routerLinkActive="active">
+    {{'xml' | translate }}
+  </a> -->
+<!-- <a class="nav-link" routerLink='/scroll' routerLinkActive="active"> -->
+<!-- {{'basic.scroll' | translate }} -->
+<!-- scroll
+  </a> -->
+
+<!-- <a class="nav-link" routerLink='/products' routerLinkActive="active">
+    {{'basic.product' | translate }}
+  </a>
+  <a class="nav-link" routerLink='/users' routerLinkActive="active">
+    {{'basic.account' | translate }}
+  </a> -->
+<!-- <a class="nav-link" routerLink='/logout' routerLinkActive="active">
+    {{ 'basic.logout' | translate }}
+  </a> -->
+<!-- </div> -->
+<!-- <div [ngClass]="(showMenu)?'show-menu':'close-menu'"> -->
+<div class="menu-space"  [ngClass]="applyClass ? (showMenu ? 'show-menu' : 'close-menu') : ''">
+  <!-- <div class="menu-space"> -->
+  <div class="menu-content">
+    <div class="menu-item" #itemElement *ngFor="let menu of xmlData; ; let i = index" (mouseleave)="onMouseLeave(i)"
+      (mouseenter)="onMouseEnter(i)">
+      <!-- nếu chỉ muốn lấy string đổi tượng  menu.icon[0] -->
+      <div *ngIf="menu.icon != ''" routerLink={{menu.slug}} routerLinkActive="active" (click)="onChangMenu()">
+        <i class="{{menu.icon[0]}}" aria-hidden="true" style="font-size: 1rem;"></i>
+      </div>
+
+      <!-- kiểm tra hiển thị khi không có icon và không có menu sub -->
+      <div *ngIf="menu.icon=='' && menu.sub ==''" [routerLink]="menu.slug" routerLinkActive="active"
+        [ngClass]="{'m-enter': isEnter[i], 'm-leave': isLeave[i]}" (click)="onChangMenu()">
+        {{ menu.name[0] | translate }}
+      </div>
+
+      <div *ngIf="menu.icon=='' && menu.sub != ''" [ngClass]="{'m-enter': isEnter[i], 'm-leave': isLeave[i]}"
+        (click)="openSubMenu(i)">
+        {{ menu.name[0] | translate }}
+      </div>
+
+      <!-- <div *ngIf="!menu.isSubMenuVisible && menu && menu.sub && menu.sub.length > 0"> -->
+
+      <div *ngIf="!menu.isSubMenuVisible && menu.sub.length > 0">
+        <!-- <div *ngIf="menu.isSubMenuVisible == 'true'"> -->
+        <!-- <div class="sub-menu" *ngIf="menu.sub && menu.sub.length > 0"   > -->
+        <div class="sub-menu-item" *ngFor="let subItem of menu.sub[0].subMenu">
+          <div routerLink={{subItem.slug}} routerLinkActive="active" (click)="onChangMenu()">{{subItem.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-icon" (click)="onChangMenu()">
+    <i class="fa fa-chevron-right" aria-hidden="true" [ngClass]="(icon)?'show-icon':'close-icon'"></i>
+  </div>
+</div>

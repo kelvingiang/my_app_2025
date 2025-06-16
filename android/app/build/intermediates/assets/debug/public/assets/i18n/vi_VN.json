@@ -1,0 +1,46 @@
+{
+  "msg": {
+    "hello": " Xin Chào ！",
+    "select_member" : "Chọn Thành Viên",
+    "are_you_sure_delete_this_item" : "Bạn chắc chắn xóa khách hàng này ？",
+    "select_date" : "Chọn Ngày Tháng",
+    "user_name_is_required" : "Tên đăng nhập không được rỗng.",
+    "password_is_required" : "Mật khẩu không được rỗng.",
+    "password_cannot_contain_spaces" : "Mật khẩu không được có khoảng trắng.",
+    "incorrect_account_or_password":"Tài khoản hoặc mật khẩu không chính xác"
+  },
+  "basic":{
+    "home" :  "Trang Chủ",
+    "about": "Giới Thiệu",
+    "contact": "Liên Hệ",
+    "member": "Thành Viên",
+    "product" : "Sản Phẩm",
+    "account": "Tài Khoản",
+    "view" : "Xem",
+    "delete" : "Xoá",
+    "edit" : "Sửa",
+    "no-data" : "Không Có Dữ Liệu",
+    "user-name" : "Tài Khoản",
+    "password" : "Mật Khẩu",
+    "logout" : "Đăng Xuất",
+    "load_more" : "xem Thêm"
+  },
+  "btn":{
+    "cancel": "Hủy",
+    "ok": "Xác Nhận",
+    "submit": "Gởi",
+    "add" : "Thêm mới",
+    "close" : "Đóng"
+  },
+  "error":{
+    "no_data": "Không có dữ liệu"
+  },
+  "member":{
+    "person_info" : "Thông Tin Cá Nhân",
+    "name" : "Tên",
+    "phone" : "Điện Thoại",
+    "email" : "E-mail",
+    "address" : "Địa Chỉ",
+    "image": "Hình Ảnh"
+  }
+}

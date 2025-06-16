@@ -1,0 +1,26 @@
+.ad-list {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+
+    .list-item {
+        margin: 1rem;
+        border-bottom: 1px solid #ddd;
+        h3 {
+            color: #333;
+            cursor: pointer;
+            text-transform: capitalize;
+            &:hover {
+                color: #999;
+            }
+        }
+        img {
+            width: 300px;
+            margin: 2rem;
+            border-radius: 3px;
+        }
+    }
+}

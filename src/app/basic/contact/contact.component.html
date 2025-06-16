@@ -1,0 +1,19 @@
+<p>
+  contact works!
+</p>
+
+
+<div class="menu-item">
+  <a class="element" 
+  #itemElement
+  *ngFor="let menu of xmlData; ; let i = index" 
+  (click)="onChangMenu()" 
+  routerLink={{menu.slug}}
+  routerLinkActive="active">
+    <!-- nếu chỉ muốn lấy string đổi tượng  menu.icon[0] -->
+    <i *ngIf="menu.icon != ''" class="{{menu.icon[0]}}" aria-hidden="true" style="font-size: 1rem;"></i>
+    {{menu.name[0]| translate }}
+
+    <!-- <i class="fa fa-chevron-left" *ngIf="mouseOver"></i> -->
+  </a>
+</div>

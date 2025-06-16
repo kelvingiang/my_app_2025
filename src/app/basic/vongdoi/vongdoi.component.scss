@@ -1,0 +1,24 @@
+.title {
+    background-color: rgb(1, 88, 16);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    label{
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-transform: capitalize;
+    }
+}
+
+.function-title{
+    color: green;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.khoangcach{
+    height: 2rem;
+    background-color: #000000;
+    margin: 1rem 0;
+}

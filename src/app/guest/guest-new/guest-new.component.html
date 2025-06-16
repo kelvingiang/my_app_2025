@@ -1,0 +1,44 @@
+<form (ngSubmit)="onSubmit()">
+    <div ngClass="modify-form">
+        <div ngClass="modify-form-row">
+            <div>Name</div>
+            <div>
+                <input id="txt-name" name="txt-name" type="text" class="my-form-control"  [(ngModel)]="formData.name" />
+            </div>
+        </div>
+        <div ngClass="modify-form-row">
+            <div>Country</div>
+            <div>
+                <input id="txt-country" name="txt-country" type="text" class="my-form-control"
+                [(ngModel)]="formData.country" />
+            </div>
+        </div>
+        <div ngClass="modify-form-row">
+            <div>Position</div>
+            <div>
+                <input id="txt-position" name="txt-position" type="text" class="my-form-control"  [(ngModel)]="formData.position" />
+            </div>
+        </div>
+        <div ngClass="modify-form-row">
+            <div>E-mail</div>
+            <div>
+                <input id="txt-email" name="txt-email" type="text" class="my-form-control" 
+                [(ngModel)]="formData.email"
+                />
+            </div>
+        </div>
+        <div ngClass="modify-form-row">
+            <div>Phone</div>
+            <div>
+                <input id="txt-phone" name="txt-phone" type="text" class="my-form-control"
+                [(ngModel)]="formData.phone"
+                />
+            </div>
+        </div>
+
+        <div ngClass="btn-space">
+            <button type="submit">Save</button>
+            <div (click)="cancel()">Cancel</div>
+        </div>
+    </div>
+</form>

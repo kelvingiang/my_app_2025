@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <mainMenu title="home menu">
+        <id>00</id>
+        <name></name>
+        <slug>/</slug>
+        <icon>fa fa-home</icon>
+        <isSubMenuVisible>false</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+    
+    <mainMenu title="first menu">
+        <id>01</id>
+        <name>basic.product</name>
+        <slug>/products</slug>
+        <icon></icon>
+        <isSubMenuVisible>false</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+
+    <mainMenu title="second menu">
+        <id>02</id>
+        <name>basic.load_more</name>
+        <slug>/load-more</slug>
+        <icon></icon>
+        <isSubMenuVisible>false</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+
+    <mainMenu title="third menu">
+        <id>03</id>
+        <name>basic.member</name>
+        <slug>/members</slug>
+        <icon></icon>
+        <isSubMenuVisible>false</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+
+    <mainMenu title="fourth menu">
+        <id>04</id>
+        <name>basic.account</name>
+        <slug>/users</slug>
+        <icon></icon>
+        <isSubMenuVisible>true</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+
+    <mainMenu title="fifth menu">
+        <id>05</id>
+        <name>basic.contact</name>
+        <slug>/contact</slug>
+        <icon></icon>
+        <isSubMenuVisible>true</isSubMenuVisible>
+        <sub>
+            <subMenu title="sixth menu">
+                <id>0601</id>
+                <name>Schedule user</name>
+                <slug>/schedule</slug>
+                <icon></icon>
+            </subMenu>
+            <subMenu title="seventh menu">
+                <id>0602</id>
+                <name>Advertising user</name>
+                <slug>/advertising</slug>
+                <icon></icon>
+            </subMenu>
+        </sub>
+    </mainMenu>
+
+    <mainMenu>
+        <id>06</id>
+        <name>Wordpress</name>
+        <slug>/wordpress</slug>
+        <icon></icon>
+        <isSubMenuVisible>true</isSubMenuVisible>
+        <sub>
+            <subMenu title="sixth menu">
+                <id>0601</id>
+                <name>Schedule wordpress</name>
+                <slug>/schedule</slug>
+                <icon></icon>
+            </subMenu>
+            <subMenu title="seventh menu">
+                <id>0602</id>
+                <name>Advertising wordpress</name>
+                <slug>/advertising</slug>
+                <icon></icon>
+            </subMenu>
+        </sub>
+    </mainMenu>
+
+    <mainMenu title="serveth menu">
+        <id>07</id>
+        <name>basic.guest</name>
+        <slug>/guest</slug>
+        <icon></icon>
+        <isSubMenuVisible>true</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+</menu>

@@ -1,0 +1,13 @@
+.datalist{
+   &-title{
+    background-color: rgb(112, 112, 112);
+    font-weight: bold;
+    color: white;
+   } 
+   &-item{
+    border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+   }
+}

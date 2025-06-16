@@ -1,0 +1,16 @@
+.parent-box{
+    height: 300px;
+    background-color: #035880;
+    color: white;
+    .title{
+        font-size: 2rem;
+        align-items: center;
+    }
+
+}
+
+.child-box{
+   height: 600px;
+   background-color: #999;
+   color: #035880;
+}

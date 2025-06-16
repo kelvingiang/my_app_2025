@@ -1,0 +1,34 @@
+<!-- BUTTON SELECT CỦA ANT DESIGN     -->
+<!-- <app-menu></app-menu> -->
+
+<div Button (click)="showPicker()">
+    {{name !== '' ? name : 'msg.select_member' | translate}}
+</div>
+
+
+<!-- kiểm tra khi dữ liệu bằng rỗng sẽ hiện thị phần này ==================================== -->
+<div class="ic-no-data" *ngIf="MemberList.length == 0">
+    <div class="ic-img-section">
+      <img src="./assets/images/error/no-data.png" class="img">
+    </div>
+    <div class="ic-empty-desc">
+      <p>{{'basic.no-data'|translate}}</p>
+    </div>
+  </div>
+
+<!-- SHOW DỮ LIÊU CHÍNH ================================================================ -->
+<div class="member-list">
+    <!-- sử dụng input để chuyền dữ liệu và output để lấy dữ liệu trả về cho member_item  -->
+    <app-member-item *ngFor="let item of MemberList" [id]="item.id" [member_id]="item.member_id"
+        [member_name]="item.name" [member_email]="item.email" (MemberDetail)="showMemberDetail(item.id)"
+        class="member-list-item">
+    </app-member-item>
+</div>
+
+
+<!-- MỞ CỬA XỔ  =================================================================== -->
+<Modal [(ngModel)]="this.state.modalMember" [transparent]="true" title="{{'member.person_info'| translate}}">
+    <app-member-detail [id]="memberItem.id" [member_id]="memberItem.member_id" [member_name]="memberItem.name"
+        [member_email]="memberItem.email" [member_address]="memberItem.address"></app-member-detail>
+    <div Button [type]="'primary'" (click)="closeModalMember()">{{'btn.close'| translate}}</div>
+</Modal>

@@ -1,0 +1,179 @@
+@import "../app.component.scss";
+.menu-space {
+  position: fixed;
+  top: 30px;
+  left: -199px;
+  z-index: 50;
+  .menu-icon {
+    i {
+      cursor: pointer;
+      position: absolute;
+      right: -20px;
+      font-size: 1.5rem;
+      color: $menu-bg-color;
+      top: 50px;
+    }
+    .show-icon {
+      animation-name: show_icon_animation;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+    }
+    @keyframes show_icon_animation {
+      0% {
+        transform: rotate(0deg);
+        color: $menu-bg-color;
+      }
+      100% {
+        transform: rotate(180deg);
+        color: $menu-bg-color;
+      }
+    }
+    .close-icon {
+      animation-name: close_icon_animation;
+      animation-duration: 0.8s;
+    }
+    @keyframes close_icon_animation {
+      0% {
+        transform: rotate(180deg);
+        color: $menu-bg-color;
+      }
+      100% {
+        transform: rotate(0deg);
+        color: $menu-bg-color;
+      }
+    }
+  }
+  
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    background-color: $menu-bg-color;
+    overflow: hidden;
+    .menu-item {
+      width: 100%;
+      color: $menu-link-color;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-bottom: 1px solid #fff;
+      overflow: hidden;
+      transition: all 1s;
+      position: relative;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        &:hover {
+          color: $menu-link-hover-color;
+          background-color: $menu-bg-hover-color;
+        }
+        &:hover::before {
+          content: "\27A4";
+          font-weight: bold;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 15px;
+          position: absolute;
+          animation-name: show_animation;
+          animation-fill-mode: forwards;
+          animation-duration: 2s;
+          left: 0px;
+          top: 12px;
+        }
+        @keyframes show_animation {
+          0% {
+            left: -10px;
+          }
+          100% {
+            left: 10px;
+          }
+        }
+      }
+      .sub-menu {
+        width: 100%;
+        position: relative;
+        display: flex;
+        &-item {
+          min-height: 50px;
+          background-color: #815757;
+          width: 100%;
+          border-bottom: 1px solid #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .m-leave {
+      &::after {
+        content: "\27A4";
+        transform-origin: center right;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+        position: absolute;
+        animation-name: show2_animation;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+      }
+    }
+    @keyframes show2_animation {
+      0% {
+        opacity: 1;
+        transform: translateX(50px) rotate(180deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(75px) rotate(180deg);
+      }
+    }
+
+    .m-enter {
+      &::after {
+        content: "\27A4";
+        width: 20px; /* 设置足够的宽度 */
+        height: 20px; /* 设置足够的高度 */
+        transform-origin: center right;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+        position: absolute;
+        animation-name: show3_animation;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+      }
+    }
+    @keyframes show3_animation {
+      0% {
+        opacity: 0;
+        transform: translateX(75px) rotate(180deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(50px) rotate(180deg);
+      }
+    }
+  }
+}
+
+.show-menu {
+  animation-name: show_nav_animation;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+@keyframes show_nav_animation {
+  0% {  left: -199px; }
+  100% { left: 0px;}
+}
+
+.close-menu {
+  animation-name: close_nav_animation;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+@keyframes close_nav_animation {
+  0% {   left: 0px;}
+  100% { left: -199px;}
+}

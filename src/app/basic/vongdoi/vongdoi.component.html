@@ -1,0 +1,23 @@
+<div class="title">
+    <label> vòng đời của component </label>
+</div>
+
+<h1> the parent component</h1>
+<div>
+    <div>ngOnInit function : {{OnInit}}</div>
+    <div>Nhận giá trị Output : {{text_output}}</div>
+</div>
+<div *ngIf="show">hhahahahahahahahahahaha</div>
+
+<div><input type="text" id="txt-name" [(ngModel)]="txt_input" /></div>
+<div Button [type]="'primary'" (click)="changeInput()"> chuyên input </div>
+
+<div class="khoangcach"></div>
+
+
+
+<h2> the child component</h2>
+
+<app-child [the_title] = title  [input_name]=out_name (OutputText)=OutputText($event)>
+    <pre class="content"> {{content}} </pre>
+</app-child>

@@ -1,0 +1,63 @@
+@import "../app.component.scss";
+
+.product-list{
+    &-item{
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+        &:nth-child(odd){
+            background-color: $odd-color;
+        }
+    }
+
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    div{
+       padding: 1rem 0.5rem;
+       img{
+        margin-left: 10%;
+        width: 80%;
+        border-radius: 3px;
+       }
+    }
+
+
+}
+
+.product-kind{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    a{
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #ccc;
+        cursor: pointer;
+        :hover{
+            background-color: #333;
+        }
+    }
+}
+
+:host ::ng-deep .my-drawer {
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  :host ::ng-deep .my-drawer .am-drawer-sidebar {
+    background-color: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  :host ::ng-deep .my-drawer .am-drawer-sidebar .am-list {
+    width: 250PX;
+    padding: 0;
+  }

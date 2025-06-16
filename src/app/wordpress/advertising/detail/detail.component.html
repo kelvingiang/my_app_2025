@@ -1,0 +1,13 @@
+<p>advertising detail works!</p>
+<div #container class="detail-list">
+    <div class="list-item" *ngFor="let item of data">
+        <h3>{{item.title}}</h3>
+        <div class="detail-img"><img class="img-responsive" src="{{item.img}}" alt="ss" /></div>
+        <div id="id-post" class="post-content" [innerHTML]="item.content"></div>
+    </div>
+</div>
+<div class="other-post">
+    <div class="other-post-item" *ngFor="let item of allData">
+        <h2 (click)="onClickDetail(item.id)">{{item.id}}-{{item.title}}</h2>
+    </div>
+</div>

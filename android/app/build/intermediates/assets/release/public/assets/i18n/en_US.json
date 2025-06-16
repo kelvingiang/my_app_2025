@@ -1,0 +1,48 @@
+{
+  "msg": {
+    "hello": "How are you ！",
+    "select_member" : "Select Member",
+    "are_you_sure_delete_this_item" : "Are you sure delete this Member ?",
+    "select_date" : "Select Date",
+    "user_name_is_required" : "User Name is required.",
+    "password_is_required" : "Password is required.",
+    "password_cannot_contain_spaces" : "Password cannot contain spaces.",
+    "incorrect_account_or_password":"Incorrect account or password"
+  },
+  "basic":{
+    "home" :  "Home",
+    "about": "About",
+    "contact": "Contact",
+    "member": "Member",
+    "product" : "Product",
+    "account": "Account",
+    "view" : "View",
+    "delete" : "Delete",
+    "edit" : "Edit",
+    "no-data" : "No Data",
+    "user-name" : "User Name",
+    "password" : "Password",
+    "logout" : "Logout",
+    "load_more" : "Load More"
+  },
+  "btn":{
+    "cancel": "Cancel",
+    "ok": "Ok",
+    "submit": "Submit",
+    "add" : "Add New",
+    "close" : "Close"
+  },
+  "error":{
+    "no_data": "Not Data"
+  },
+  "member":{
+    "person_info" : "Person Information",
+    "name" : "Name",
+    "phone" : "Phone",
+    "email" : "E-mail",
+    "address" : "Address",
+    "image" : "Image"
+    
+  }
+
+}

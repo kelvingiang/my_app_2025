@@ -1,0 +1,33 @@
+.detail-list {
+    .list-item {
+        background-color: #dfdfdf;
+        color: #363636;
+        padding: 0.5rem;
+        .detail-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 80%;
+            }
+            margin: 20px 0;
+        }
+        .post-content {
+            display: flex;
+            flex-direction: column;
+            justify-self: left;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.other-post {
+    margin-top: 1rem;
+    &-item {
+        padding: 1rem;
+        &:nth-child(odd) {
+            background-color: #dfdfdf;
+        }
+    }
+}

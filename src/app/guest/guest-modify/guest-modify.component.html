@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()">
+    <div ngClass="modify-form">
+        <div ngClass="modify-form-row">
+            <div>Name</div>
+            <div><input id="txt-name" name="txt-name" type="text" class="my-form-control" [(ngModel)]="guest.name"
+                    [ngModelOptions]="{standalone: true}" /></div>
+        </div>
+        <div ngClass="modify-form-row">
+            <div>Email</div>
+            <div><input id="txt-email" name="txt-email" type="text" class="my-form-control" [(ngModel)]="guest.email"
+                    [ngModelOptions]="{standalone: true}" /></div>
+        </div>
+        <div ngClass="btn-space">
+            <button type="submit">Save</button>
+            <div (click)="cancel()">Cancel</div>
+        </div>
+    </div>
+</form>

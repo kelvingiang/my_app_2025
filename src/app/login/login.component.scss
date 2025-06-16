@@ -1,0 +1,49 @@
+@import "../app.component.scss";
+.form-login{
+
+    margin-top: 10%;
+
+ .login-failure{
+    background-color: $bg-error-color;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    color: white;
+ }   
+
+.form-row {
+    height: 3rem;
+    display: block;
+    margin-bottom: 2rem;
+    padding: 0 1rem ;
+    label{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #666;
+        padding-bottom: 10rem;
+        padding-left: 0.5rem;
+        i{margin-left: 0.5rem;
+          color: #862e1e;
+          font-size: 0.8rem;
+          }
+
+    }
+    .control-input {
+        width: 100%;
+        height: 40px;
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 0.1rem;
+        padding : 0 0.5rem ;
+        &:focus{
+            border: 1px solid #3ca0f3;
+        }
+    }
+}
+
+.form-botton{
+    margin: 3rem 1rem;
+}
+
+}

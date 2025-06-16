@@ -1,0 +1,7 @@
+<div *ngIf="guest" [ngClass]="['guest-detail']" >
+   <h1>{{guest.name}}</h1>
+   <!-- <h1>{{guest.barcode}}</h1> -->
+   <div [ngClass]="['img']">
+      <img src="{{guest.imgUrl}}" alt="{{guest.name}}"  />
+   </div>
+</div>

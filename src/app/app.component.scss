@@ -1,0 +1,9 @@
+@import '../styles.scss';
+
+.my-link{
+    color: $link-color;
+    font-weight: bold;
+    &:hover{
+        color: $link-color-hover;
+    }
+}

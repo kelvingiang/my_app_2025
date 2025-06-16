@@ -1,0 +1,29 @@
+<div class="schedule-list" *ngIf="loadData">
+    <!-- <div class="schedule-list-item" *ngFor="let item of scheduleList"> -->
+    <!-- <div class="schedule-list-item" *ngFor="let item of newData | keyvalue"> -->
+    <div class="schedule-list-item" *ngFor="let item of scheduleList ; let itemIndex = index">
+        <div class="item-year">{{item['year'] }}</div>
+        <div class="list-month" *ngFor="let obj of item['months'] ; let monthIndex = index">
+            <div class="item-month"> month :{{obj['month']}}</div>
+            <div class="item-box" *ngFor="let obj2 of obj['items']; let objIndex = index">
+                <div class="item-title" (click)="showContent(obj2.id)">
+                    <span>{{obj2.title}}</span>
+                    <span>{{obj2.weekdays}} {{obj2.date}} </span>
+                </div>
+                <!-- <div class="item-content" [class.item-content-show]="itemContentVisible === obj2.id"> -->
+
+                <!-- <div *ngIf="addClass"> -->
+                <div class="item-content" [ngClass]="(itemContentVisible == obj2.id ) ? 'item-content-show' : 'item-content-hide'">
+                    <!-- <div class="item-content" [ngClass]="{'item-content-show': itemContentVisible == obj2.id}"> -->
+                    {{obj2.brand}} -- {{obj2.note}} -- {{obj2.place}}
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="error-space" *ngIf="!loadData">
+    <img [src]="imgURl" class="img-responsive" />
+    <label>load Data failure</label>
+</div>

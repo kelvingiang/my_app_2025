@@ -1,0 +1,11 @@
+<label class="title">onChanges child </label>
+
+<div class="lamp-box" [ngClass]="lampStatus ? 'lamp-on' : 'lamp-off'" [style.background-color]="lampColor"></div>
+
+<div><label>{{messenger}}</label></div>
+
+<div class="lamp-color">
+    <button (click)="selectColor('white')"> white  </button>
+    <button (click)="selectColor('red')"> red    </button>
+    <button (click)="selectColor('yellow')"> yellow </button>
+</div>

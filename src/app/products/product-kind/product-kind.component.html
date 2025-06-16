@@ -1,0 +1,8 @@
+<!-- <app-menu></app-menu> -->
+<div class="product-list">
+  <div class="product-list-item" *ngFor="let item of productKindList">
+    <div>{{item.name}}</div>
+    <div>{{item.summary}}</div>
+    <div class="my-link" (click)="showMore(item.id)">view</div>
+  </div>
+</div>

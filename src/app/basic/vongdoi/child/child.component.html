@@ -1,0 +1,21 @@
+<div>
+    <h1 [class.text-color]="checkView">{{the_title}}</h1>
+    <ng-content #name select=".content"> </ng-content>
+    <div *ngIf="showDiv">ssf a asf as as asf as</div>
+ 
+    <label>input value : {{input_name}}</label>
+    <div [class.bg-green]="checkContent">{{childMessage}}</div>
+</div>
+<hr>
+<div [class.bg-red]="checkTitle">
+    <p> trinh tu chay cac function vong doi</p>
+    <ul>
+        <li *ngFor="let item of data">{{item}}</li>
+    </ul>
+    <hr>
+</div>
+<!-- <div>
+    <div Button [type]="'dashed'" (click)="changeInput('output value return parent')">
+        trả vể output
+    </div>
+</div> -->

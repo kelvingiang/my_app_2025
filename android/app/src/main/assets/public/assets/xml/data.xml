@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <main-menu title="first menu">
+        <id>01</id>
+        <name>Fisrt</name>
+        <slug>fisrt</slug>
+        <sub>
+            <sub-item>
+                <sub-id>0101</sub-id>
+                <sub-name>first sub 01</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0102</sub-id>
+                <sub-name>first sub 02</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0103</sub-id>
+                <sub-name>first sub 03</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0104</sub-id>
+                <sub-name>first sub 04</sub-name>
+            </sub-item>
+        </sub>
+    </main-menu>
+    <main-menu title="second menu">
+        <id>02</id>
+        <name>Second</name>
+        <slug>second</slug>
+        <sub>
+            <sub-item>
+                <sub-id>0201</sub-id>
+                <sub-name>second sub 01</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0202</sub-id>
+                <sub-name>second sub 02</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0203</sub-id>
+                <sub-name>second sub 03</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0204</sub-id>
+                <sub-name>second sub 04</sub-name>
+            </sub-item>
+            <sub-item>
+                <sub-id>0205</sub-id>
+                <sub-name>second sub 05</sub-name>
+            </sub-item>
+        </sub>
+    </main-menu>
+    <main-menu title="third menu">
+        <id>03</id>
+        <name>Third</name>
+        <slug>third</slug>
+        <sub></sub>
+    </main-menu>
+    <main-menu title="fourth menu">
+        <id>04</id>
+        <name>Fourth</name>
+        <slug>fourth</slug>
+        <sub></sub>
+    </main-menu>
+    <main-menu title="fifth menu">
+        <id>05</id>
+        <name>Fifth</name>
+        <slug>fifth</slug>
+        <sub></sub>
+    </main-menu>
+    <main-menu title="sixth menu">
+        <id>06</id>
+        <name>Sixth</name>
+        <slug>sixth</slug>
+        <sub></sub>
+    </main-menu>
+    <main-menu title="seventh menu">
+        <id>07</id>
+        <name>Seventh</name>
+        <slug>seventh</slug>
+        <sub></sub>
+    </main-menu>
+    <main-menu title=" eighth menu">
+        <id>08</id>
+        <name>Eighth</name>
+        <slug>eighth</slug>
+        <sub></sub>
+    </main-menu>
+</menu>

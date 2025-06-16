@@ -1,0 +1,15 @@
+<div class="parent-box">
+    <div>onchanges sẽ được kích hoạt khi gia tri thay đổi chuyên qua từ cha sang con</div>
+    <div>
+        <label class="title">onchanges parent</label>
+    </div>
+    <div>
+        <button (click)="lamp=true">True On</button>
+        <button (click)="lamp=false">True Off</button>
+    </div>
+    {{lamp}}
+</div>
+
+<div class="child-box">
+   <app-child-onChanges [lampStatus]=lamp></app-child-onChanges>
+</div>

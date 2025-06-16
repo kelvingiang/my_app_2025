@@ -1,0 +1,10 @@
+<div class="product-detail">
+      <div> name :{{product.name}}</div>
+      <div> price :{{product.price}}</div>
+      <div> <img src="{{ imgUrl + product.img}}" /></div>
+      <div> {{product.summary}}</div>
+  </div>
+  
+  <div>
+    <div Button [type]="'primary'" (click)="back()">back</div>
+  </div>

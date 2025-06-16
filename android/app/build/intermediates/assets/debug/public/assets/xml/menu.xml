@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <main-menu title="first menu">
+        <id>00</id>
+        <name></name>
+        <slug></slug>
+        <icon>fa fa-home</icon>
+    </main-menu>
+    <main-menu title="first menu">
+        <id>01</id>
+        <name>basic.product</name>
+        <slug>/products</slug>
+        <icon></icon>
+    </main-menu>
+    <main-menu title="second menu">
+        <id>02</id>
+        <name>basic.load_more</name>
+        <slug>/load-more</slug>
+        <icon></icon>
+    </main-menu>
+    <main-menu title="third menu">
+        <id>03</id>
+        <name>basic.member</name>
+        <slug>/members</slug>
+        <icon></icon>
+    </main-menu>
+    <main-menu title="fourth menu">
+        <id>04</id>
+        <name>basic.account</name>
+        <slug>/users</slug>
+        <icon></icon>
+    </main-menu>
+    <main-menu title="fifth menu">
+        <id>05</id>
+        <name>basic.contact</name>
+        <slug>/contact</slug>
+        <icon></icon>
+    </main-menu>
+</menu>

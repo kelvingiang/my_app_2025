@@ -1,0 +1,88 @@
+.schedule-list {
+    &-item {
+        &:nth-child(even) {
+            background-color: #ccc;
+        }
+        .item-year {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: rgb(1, 58, 58);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .list-month {
+            margin-bottom: 0.5rem;
+            &:nth-child(even) {
+                background-color: #f0f0f0;
+            }
+            .item-month {
+                font-size: 1.3rem;
+                font-weight: 600;
+                background-color: rgb(226, 225, 225);
+                color: #01405e;
+                padding: 0.5rem 1.5rem;
+            }
+            .item-box {
+                border-bottom: 1px dotted #ccc;
+                background-color: #fff;
+                .item-title {
+                    padding: 0.8rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fcfbf3;
+                    }
+                    span {
+                        &:nth-child(1) {
+                            width: 80%;
+                        }
+                        &:nth-child(2) {
+                            width: 20%;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .item-content {
+                    background-color: #cfeaf7;
+                    display: none;
+                }
+                .item-content-show {
+                    animation-name: example;
+                    animation-duration: 1s;
+                    overflow: visible;
+                    min-height: 100px;
+                    display: flex;
+                }
+                @keyframes example {
+                    from {
+                        min-height: 0;
+                    }
+                    to {
+                        min-height: 100px;
+                        /* 设置一个足够大的值，以模拟自动展开 */
+                    }
+                }
+                .item-content-hide {
+                    display: flex;
+                    overflow: hidden;
+                    height: 0;
+                    // transition: height 1s;
+                    animation-name: example2;
+                    animation-duration: 0.3s;
+                }
+                @keyframes example2 {
+                    from {
+                        height: 50px;
+                    }
+                    to {
+                        height: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

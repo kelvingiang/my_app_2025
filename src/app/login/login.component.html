@@ -1,0 +1,33 @@
+<div class="form-login">
+  <div class="login-failure" *ngIf="loginFailure">{{'msg.incorrect_account_or_password' | translate }}</div>
+
+  <form [formGroup]="form">
+    <div class="form-row">
+      <label>{{'basic.user-name'|translate}}
+        <i *ngIf="form.controls.username.touched && !form.controls.username.valid || inputError"
+          class="alert alert-danger">
+          {{'msg.user_name_is_required'|translate}}
+        </i>
+      </label>
+
+      <input type="text" formControlName="username" class="control-input" [placeholder]=user />
+    </div>
+
+    <div class="form-row">
+      <label>{{'basic.password' |translate}}
+        <i *ngIf="form.controls.password.errors?.['cannotContainSpace'] && form.controls.password.touched || inputError">
+          {{'msg.password_cannot_contain_spaces'|translate}}
+        </i>
+        <i *ngIf="form.controls.password.errors?.['required'] && form.controls.password.touched">
+          {{'msg.password_is_required'|translate}}
+        </i>
+      </label>
+
+      <input type="password" formControlName="password" class="control-input" [placeholder]=password />
+    </div>
+
+    <div class="form-botton">
+      <div Button [type]="'primary'" (click)="submit()"> {{ 'btn.submit' | translate | capitalize}} </div>
+    </div>
+  </form>
+</div>

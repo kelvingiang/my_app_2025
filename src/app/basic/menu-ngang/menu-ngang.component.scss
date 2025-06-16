@@ -1,0 +1,29 @@
+#menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menuItem {
+    margin: 10px;
+    cursor: pointer;
+    margin: 1rem 2rem;
+}
+
+
+@keyframes moveAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  #followDiv {
+    animation-name: moveAnimation;
+    animation-duration: 0.3s; /* 动画持续时间 */
+    animation-timing-function: ease-in; /* 缓动函数 */
+    animation-fill-mode: forwards; /* 动画结束后保持最终状态 */
+    display: block;
+  }

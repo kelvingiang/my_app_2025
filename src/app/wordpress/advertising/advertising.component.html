@@ -1,0 +1,13 @@
+<p>advertising works!</p>
+<div class="ad-list" *ngIf="loadData">
+    <div class="list-item" *ngFor="let item of AdList">
+        <h3 (click)="onClickDetail(item.id)">{{item.title + '--' + item.id }}</h3>
+        <div><img src="{{item.img}}" /></div>
+        <label>{{item.email}}</label>
+        <div>{{splitContent(item.content)}}</div>
+    </div>
+</div>
+<div class="error-space" *ngIf="!loadData">
+    <img [src]="imgURl" class="img-responsive"/>
+       <label>load Data failure</label>
+  </div>

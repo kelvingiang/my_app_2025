@@ -1,0 +1,21 @@
+<div class="datalist">
+    <div class="datalist-item datalist-title">
+        <span>ID</span>
+        <span>title</span>
+        <span>Name</span>
+        <span>Slug</span>
+        <span>sub</span>
+    </div>
+    <div class="datalist-item" *ngFor="let item of xmlData">
+        <span>{{item.id }}</span>
+        <span>{{item['$']['title']}}</span>
+        <span>{{item.name }}</span>
+        <span>{{item.slug }}</span>
+        <span>
+            <div *ngFor="let subItem of item['sub'][0]['sub-item']">
+                <p>Sub ID: {{ subItem['sub-id'] }}</p>
+                <p>Sub Name: {{ subItem['sub-name'] }}</p>
+            </div>
+        </span>
+    </div>
+</div>

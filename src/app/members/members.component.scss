@@ -1,0 +1,59 @@
+@import "../app.component.scss";
+
+.member-list {
+    margin-top: 1rem;
+    &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-self: center;
+        padding: 1rem 0.5rem;
+        &:nth-child(odd) {
+            background-color: $odd-color;
+        }
+    }
+}
+
+.member-id {
+    width: 15%;
+}
+
+.member-name{
+    width: 30%;
+}
+
+.member-email{
+    width: 40%;
+}
+.member-view{
+    width: 15%;
+    text-align: right;
+}
+
+//========================================================================
+
+.member-info{
+
+    div{
+        padding: 1rem 0.5rem;
+        text-align: left;
+        border-bottom: 1px #ccc solid  ;
+    }
+}
+
+//=================================================================
+.ic-no-data{
+    background-color: #ccc;
+    width: 100vw;
+    height: 100vh;
+    
+    img{
+        margin: 25%;
+        width: 50%;
+    }
+    .ic-empty-desc{
+        margin-left: 35%;
+        color: #666;
+        font-size: 1rem;
+    }
+}
