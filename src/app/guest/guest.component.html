@@ -1,30 +1,32 @@
-<div ngClass="failure-space" *ngIf="loadDataFailure">
-        <img src="./assets/images/error/no-data.png" class="img" />
-        <label>{{'basic.no-data'|translate}}</label>
+<div ngClass="failure-space" *ngIf="loading">
+    <img src="./assets/images/error/no-data.png" class="img" />
+    <label>ssssss</label>
 </div>
-<div *ngIf="!loadDataFailure">
-    <div class="add-new">
-        <button (click)="addNew()">Add New</button>
-    </div>
-    <div (scroll)="onScroll($event)">
-        <div class="guest-list">
-            <div class="list-item" *ngFor="let item of AdList">
-                <div> {{item.serialNumber +'---'+ item.barcode + ' -- ' + item.fullName}}</div>
-                <div class="control-icon">
-                    <div (click)="onClickView(item.id)">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                    </div>
-                    <div (click)="onClickModify(item.id)">
-                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    </div>
-                    <div class="delete-icon" (click)="onClickDelete(item.id, item.fullName)">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+<div *ngIf="!loading">
+    <div *ngIf="!loadDataFailure">
+        <div class="add-new">
+            <button (click)="addNew()">Add New</button>
+        </div>
+        <div (scroll)="onScroll($event)">
+            <div class="guest-list">
+                <div class="list-item" *ngFor="let item of AdList">
+                    <div> {{item.serialNumber +'---'+ item.barcode + ' -- ' + item.fullName}}</div>
+                    <div class="control-icon">
+                        <div (click)="onClickView(item.id)">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <div (click)="onClickModify(item.id)">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="delete-icon" (click)="onClickDelete(item.id, item.fullName)">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
+            <hr *ngIf="AdList.length > 0" />
+            <div *ngIf="loading" class="loading">Loading...</div>
         </div>
-        <hr *ngIf="AdList.length > 0" />
-        <div *ngIf="loading" class="loading">Loading...</div>
     </div>
 </div>
 
@@ -50,8 +52,9 @@
     <div class="guest-popup-content">
         <div class="guest-popup-title">
             <label>{{'member.person_info'| translate}} cap nhat ss</label>
-            <i class="fa fa-times-circle" aria-hidden="true" (click)="closePopupUpdate()" ></i>
+            <i class="fa fa-times-circle" aria-hidden="true" (click)="closePopupUpdate()"></i>
         </div>
-        <app-guest-modify [guest]="GuestUpdate" (closePopup)="closePopupUpdate()" (updateResult)="outputResult($event)"></app-guest-modify>
+        <app-guest-modify [guest]="GuestUpdate" (closePopup)="closePopupUpdate()"
+            (updateResult)="outputResult($event)"></app-guest-modify>
     </div>
 </div>

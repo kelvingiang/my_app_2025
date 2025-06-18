@@ -42,8 +42,8 @@ export class GuestModifyComponent implements OnInit {
   onSubmit() {
     this._guestService.updateGuest(this.guest.id, this.guest).subscribe({
       next: (response) => {
-        // console.log('User updated successfully:', response);
-        // console.log(this.guest);
+        console.log('User updated successfully:', response);
+        console.log(this.guest);
         // alert('Update successful!');
         this.updateResult.emit(this.guest); // 發送事件通知父元件
         this.closePopup.emit();
@@ -51,7 +51,8 @@ export class GuestModifyComponent implements OnInit {
         // this._router.navigate(["guest"]);
       },
       error: (err) => {
-        console.error('Error updating user:', err);
+        console.error('Error updating user ss:', err);
+        console.log(this.guest);
         alert('Update failed! ..');
       },
     });

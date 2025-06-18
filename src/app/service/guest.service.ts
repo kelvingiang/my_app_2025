@@ -45,8 +45,6 @@ export class GuestService {
           })
         )
     );
-
- 
   }
 
   private extractData(response: any): any[] {
@@ -66,9 +64,13 @@ export class GuestService {
 
   //cap nhat du lieu =====
   // áp dụng cách chuyên dữ liệu bằng json
+  // chi bang API-KEY
   updateGuest(id: string, data: any): Observable<any> {
     const url = `${this.url + "guest-update.php"}?id=${id}`; // 假設需要用戶ID
-    const headers = { "Content-Type": "application/json" }; // 確保使用 JSON 格式
+    const headers = {
+      "Content-Type": "application/json",
+      "API-KEY": this.apiKey,
+    }; // 確保使用 JSON 格式
     return this._http.put(url, data, { headers }); // 使用 PUT 方法傳送數據
   }
 
@@ -77,11 +79,20 @@ export class GuestService {
   // để ép kiểu chuyền là json
   addGuest(data: FormData): Observable<any> {
     const url = `${this.url}guest-add.php`; // 確保 URL 拼接正確
-    return this._http.post(url, data); // 不需要額外設置 headers，瀏覽器會自動處理
+    const headers = new HttpHeaders({
+      "API-KEY": this.apiKey, // 把驗證碼加在 Header 裡
+      // ⚠️ 不要加 Content-Type，Angular/瀏覽器會自動處理 multipart/form-data
+    }); // 確保使用 JSON 格式
+    return this._http.post(url, data, { headers }); // 不需要額外設置 headers，瀏覽器會自動處理
   }
 
   deleteGuest(id: any): Observable<any> {
-    console.log(this._http.delete(this.url + "guest-delete.php/?id=" + id));
-    return this._http.delete(this.url + "guest-delete.php/?id=" + id); // 使用 PUT 方法傳送數據
+    const headers = new HttpHeaders({
+      "Content-Type": "application/json",
+      "API-KEY": this.apiKey,
+    });
+    return this._http.delete(this.url + "guest-delete.php/?id=" + id, {
+      headers,
+    });
   }
 }

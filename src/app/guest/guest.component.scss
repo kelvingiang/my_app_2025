@@ -276,3 +276,13 @@ button{
     height: 80px;
     background-color: #f8f8f8;
 }
+
+.failure-space{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    img{
+        width: 20%;
+    }
+}
