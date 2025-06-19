@@ -19,8 +19,6 @@ export class GuestNewComponent implements OnInit {
   };
   selectedFile: File | null = null;
 
-  // const formData = new FormData();
-
   constructor(
     private _guestService: GuestService,
     private _activatedRoute: ActivatedRoute,
@@ -29,23 +27,6 @@ export class GuestNewComponent implements OnInit {
 
   ngOnInit() {}
 
-  // 生成當天的日期
-  // getCurrentDate(): string {
-  //   const today = new Date();
-  //   const year = today.getFullYear();
-  //   const month = String(today.getMonth() + 1).padStart(2, "0"); // 月份從 0 開始，需要加 1
-  //   const day = String(today.getDate()).padStart(2, "0");
-  //   return `${day}-${month}-${year}`; // 例如: "2024-11-25"
-  // }
-
-  // 處理檔案選擇
-  // onFileSelected(event: Event): void {
-  //   const input = event.target as HTMLInputElement;
-  //   if (input?.files?.length) {
-  //     this.selectedFile = input.files[0];
-  //     console.log("選擇的檔案:", this.selectedFile);
-  //   }
-  // }
 
   onFileSelected(event: Event): void {
     console.log(event);
