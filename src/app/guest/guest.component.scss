@@ -1,4 +1,4 @@
-@import './../../styles.scss';
+@import "./../../styles.scss";
 
 .guest-list {
     display: flex;
@@ -14,7 +14,7 @@
         justify-content: space-between;
         color: #999;
         font-weight: bold;
-        &:nth-child(odd){
+        &:nth-child(odd) {
             background-color: #fafafa;
         }
         &:hover {
@@ -22,39 +22,52 @@
             border-radius: 2px;
             border: #868686;
             color: #254264;
-            
         }
 
-        .control-icon{
+        .control-icon {
             display: flex;
             flex-direction: row;
             color: #868686;
-            div{
+            div {
                 cursor: pointer;
                 margin: 0 8px;
                 font-size: 18px;
-                &:hover{
+                &:hover {
                     color: #03476e;
                 }
             }
-            .delete-icon{
-                &:hover{
+            .delete-icon {
+                &:hover {
                     color: #b32602;
                 }
             }
-
-
         }
-      
     }
 }
 
 .scroll-container {
-    height: 400px; /* 或其他適當高度 */
+    height: 500px;
     overflow-y: auto;
     border: 1px solid #ccc;
-    position: relative;
-  }
+    padding: 10px;
+}
+
+.list-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.loading {
+    text-align: center;
+    color: blue;
+    margin-top: 10px;
+}
+
+.no-more {
+    text-align: center;
+    color: gray;
+    margin-top: 10px;
+}
 
 ////===================================
 
@@ -200,43 +213,43 @@
 
 //== modify================================================
 
-.modify-form{
+.modify-form {
     width: 100%;
     height: 80vh;
     padding: 1rem;
     margin: auto;
     background-color: #e4e4e4;
     border-radius: 5px;
-    &-row{
+    &-row {
         display: flex;
         flex-direction: row;
         justify-content: left;
         margin: 1rem 0;
-        div:nth-child(1){
+        div:nth-child(1) {
             margin-top: 5px;
             margin-right: 10px;
             width: 50px;
         }
-        div:nth-child(2){
-           
+        div:nth-child(2) {
             width: 80%;
             margin-right: 10px;
         }
     }
 }
 
-.btn-space{
+.btn-space {
     display: flex;
     flex-direction: row;
     // justify-content: center;
     // align-items: center;
     position: absolute;
     bottom: 50px;
-   right: 50px;
-    div, button{
+    right: 50px;
+    div,
+    button {
         font-size: 16px;
         font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: "Times New Roman", Times, serif;
         color: #333;
         cursor: pointer;
         padding: 0.5rem 1rem;
@@ -246,17 +259,17 @@
         border: 0;
         min-width: 120px;
         text-align: center;
-        &:hover{
-            background-color: #03476e;  
+        &:hover {
+            background-color: #03476e;
             color: white;
         }
-    }   
+    }
 }
 
-button{
+button {
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: #333;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -266,23 +279,25 @@ button{
     border: 0;
     min-width: 120px;
     text-align: center;
-    &:hover{
-        background-color: #03476e;  
+    &:hover {
+        background-color: #03476e;
         color: white;
     }
-}   
+}
 
-.add-new{
+.add-new {
     height: 80px;
     background-color: #f8f8f8;
 }
 
-.failure-space{
+.loadDataFailure {
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    img{
+    align-items: center;
+    img {
         width: 20%;
+        
     }
 }

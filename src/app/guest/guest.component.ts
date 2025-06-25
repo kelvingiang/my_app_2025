@@ -54,14 +54,14 @@ export class GuestComponent implements OnInit {
     this.loadMore();
   }
 
-  @HostListener("window:scroll", [])
   onScroll(event: any): void {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight;
-    // 確認是否接近頁面底部
+    const target = event.target;
+    const scrollTop = target.scrollTop;
+    const scrollHeight = target.scrollHeight;
+    const clientHeight = target.clientHeight;
+
     if (
-      scrollHeight - scrollTop <= clientHeight + 30 &&
+      scrollHeight - scrollTop <= clientHeight &&
       !this.loading &&
       !this.allLoaded
     ) {
@@ -105,13 +105,17 @@ export class GuestComponent implements OnInit {
       // },
       error: (error) => {
         this.loading = false;
-        this.errorMessage = "error load data";
-        console.log("error", error);
+        this.errorMessage = "無法連線到伺服器，請稍後再試！";
+        this.loadDataFailure = true;
       },
       complete: () => {
         console.log("Request completed.");
       },
     });
+  }
+
+  trackById(index: number, item: any): any {
+    return item.id || item.serialNumber;
   }
 
   onClickView(id: any) {
@@ -164,13 +168,15 @@ export class GuestComponent implements OnInit {
   //== delete ap dung comform ====================================================
 
   onClickDelete(id: number, name: string) {
-    const userConfirmed = confirm("確定刪除 '"+ name + "' 嗎?");
+    const userConfirmed = confirm("確定刪除 '" + name + "' 嗎?");
 
     if (userConfirmed) {
       this._guestService.deleteGuest(id).subscribe(
         (res) => {
           // cập nhật là Adlist không cẩn phải refrest trang
-          this.AdList = this.AdList.filter((ad: { id: number }) => ad.id !== id);
+          this.AdList = this.AdList.filter(
+            (ad: { id: number }) => ad.id !== id
+          );
         },
         (err) => {
           console.log("error", err);
@@ -180,7 +186,6 @@ export class GuestComponent implements OnInit {
       console.log("操作已取消。");
     }
   }
-
 
   //=======================================================
 
