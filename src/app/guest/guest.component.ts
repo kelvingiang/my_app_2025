@@ -10,6 +10,7 @@ import {
 // import { FormsModule } from '@angular/forms';
 import { GuestService } from "./../service/guest.service";
 import { Router } from "@angular/router";
+import { environment } from "../../environments/environment";
 
 @Component({
   selector: "app-guest",
@@ -34,6 +35,7 @@ export class GuestComponent implements OnInit {
   GuestUpdate: any = [];
   errorMessage: string = "";
   loadDataFailure: boolean = true;
+  dataFrom = environment.API_GUEST;
 
   state = {
     modalGuest: false,
