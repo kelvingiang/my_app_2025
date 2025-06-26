@@ -8,7 +8,7 @@
         <isSubMenuVisible>false</isSubMenuVisible>
         <sub></sub>
     </mainMenu>
-    
+
     <mainMenu title="first menu">
         <id>01</id>
         <name>basic.product</name>
@@ -34,37 +34,6 @@
         <icon></icon>
         <isSubMenuVisible>false</isSubMenuVisible>
         <sub></sub>
-    </mainMenu>
-
-    <mainMenu title="fourth menu">
-        <id>04</id>
-        <name>basic.account</name>
-        <slug>/users</slug>
-        <icon></icon>
-        <isSubMenuVisible>true</isSubMenuVisible>
-        <sub></sub>
-    </mainMenu>
-
-    <mainMenu title="fifth menu">
-        <id>05</id>
-        <name>basic.contact</name>
-        <slug>/contact</slug>
-        <icon></icon>
-        <isSubMenuVisible>true</isSubMenuVisible>
-        <sub>
-            <subMenu title="sixth menu">
-                <id>0601</id>
-                <name>Schedule user</name>
-                <slug>/schedule</slug>
-                <icon></icon>
-            </subMenu>
-            <subMenu title="seventh menu">
-                <id>0602</id>
-                <name>Advertising user</name>
-                <slug>/advertising</slug>
-                <icon></icon>
-            </subMenu>
-        </sub>
     </mainMenu>
 
     <mainMenu>
@@ -93,6 +62,15 @@
         <id>07</id>
         <name>basic.guest</name>
         <slug>/guest</slug>
+        <icon></icon>
+        <isSubMenuVisible>true</isSubMenuVisible>
+        <sub></sub>
+    </mainMenu>
+
+    <mainMenu title="fourth menu">
+        <id>04</id>
+        <name>basic.login</name>
+        <slug>/users</slug>
         <icon></icon>
         <isSubMenuVisible>true</isSubMenuVisible>
         <sub></sub>

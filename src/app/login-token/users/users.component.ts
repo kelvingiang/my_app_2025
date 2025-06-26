@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { UsersService } from "../service/users.service";
+import { UsersService } from "../../service/users.service";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Router } from "@angular/router";
 import * as jwt_decode from "jwt-decode";
@@ -10,8 +10,9 @@ import * as jwt_decode from "jwt-decode";
   styleUrls: ["./users.component.scss"],
 })
 export class UsersComponent implements OnInit {
-  data: any = [];
+  list: any = [];
   tokenLocal: any = null;
+  urlPart: any ='';
 
   constructor(
     private _usersService: UsersService,
@@ -22,7 +23,7 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
     this.tokenLocal = localStorage.getItem("token"); // lấy giá trị token được lưu trong localStorage
     const url = this._usersService.url; // lấy value URL của userService
-   
+     this.urlPart = this._usersService.url;
     // kiểm tra tokenLocal nếu bằng rỗng sẽ chuyển về trang mặc định
     // ngược lại sẽ lên server kiểm tra token
     // kiểm tra token sẽ get data ở server
@@ -34,31 +35,9 @@ export class UsersComponent implements OnInit {
         Authorization: `Bearer ${this.tokenLocal}`,
       });
 
-      // this._http.post<any>(url + "checkloginheader.php", {headers}).subscribe(
-      //   (response) => {
-      //     // 处理登录成功的响应
-      //     const token = response.token; // lấy token trả về
-      //     localStorage.setItem("token", token);
-      //     // 存储令牌
-      //     // lấy data từ server về ====
-      //     this._usersService.getUserData().subscribe(
-      //       (data) => {
-      //         this.data = data;
-      //       },
-      //       (error) => {
-      //         console.log("Log the error here: ", error);
-      //       }
-      //     );
-      //   },
-      //   (error) => {
-      //     // 处理登录失败的响应
-      //     console.error("登录失败++", error);
-      //   }
-      // );
-
       // chuyển dữ liệu kiểm tra token bằng cách chuyền data
-      const data = { token: this.tokenLocal };
-      this._http.post<any>(url + "checklogin.php", data).subscribe(
+      const oldToken = { token: this.tokenLocal };
+      this._http.post<any>(url + "checklogin.php", oldToken).subscribe(
         (response) => {
           // 处理登录成功的响应
           const token = response.token; // lấy token trả về
@@ -114,7 +93,7 @@ export class UsersComponent implements OnInit {
           // lấy data từ server về ====
           this._usersService.getUserData().subscribe(
             (data) => {
-              this.data = data;
+              this.list = data;
             },
             (error) => {
               console.log("Log the error here: ", error);
@@ -130,6 +109,7 @@ export class UsersComponent implements OnInit {
   }
 
   onclickLogout(){
+    localStorage.removeItem('token');
     this._router.navigate(["/login"]);
   }
 }

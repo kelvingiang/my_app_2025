@@ -21,10 +21,10 @@ import { NgZorroAntdMobileModule } from "ng-zorro-antd-mobile";
 //CÁC MODULE PHẦN CON =======================
 import { MembersModule } from "./members/members.module";
 import { ProductsModule } from "./products/products.module";
-import { UsersModule } from "./users/users.module";
 import { BasicModule } from "../app/basic/basic.module";
 import { ShareModule } from "./share/share.module";
-import { LoginModule } from "./login/login.module";
+import { UsersModule } from "./login-token/users/users.module";
+import { LoginModule } from "./login-token/login/login.module";
 import { MenuModule } from "./menu/menu.module";
 import { LanguagesModule } from "./languages/languages.module";
 import { WordpressModule } from "./wordpress/wordpress.module";

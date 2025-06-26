@@ -4,12 +4,12 @@ import { FormsModule } from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms"; // SU DUNG FORMGROUP CAN ADD
 
 import { LoginComponent } from "./login.component";
-import { HomeComponent } from "../basic/home/home.component";
+import { HomeComponent } from "../../basic/home/home.component";
 
 // import { LanguagesComponent } from "../languages/languages.component";
 
 import { NgZorroAntdMobileModule } from "ng-zorro-antd-mobile";
-import { ShareModule } from "../share/share.module";
+import { ShareModule } from "../../share/share.module";
 
 
 // 1 TẠO CHUYỂN TRANG TRONG MODULE CON GỜM 3 BƯỚC

@@ -24,7 +24,8 @@
     "password" : "Password",
     "logout" : "Logout",
     "load_more" : "Load More",
-    "guest" : "Guest"
+    "guest" : "Guest",
+    "login" : "Login"
   },
   "btn":{
     "cancel": "Cancel",

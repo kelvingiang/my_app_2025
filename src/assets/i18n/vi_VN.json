@@ -24,7 +24,8 @@
     "password" : "Mật Khẩu",
     "logout" : "Đăng Xuất",
     "load_more" : "xem Thêm",
-    "guest" : "Khách Mời"
+    "guest" : "Khách Mời",
+    "login" : "Đăng Nhập"
   },
   "btn":{
     "cancel": "Hủy",

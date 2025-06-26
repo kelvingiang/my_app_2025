@@ -8,9 +8,9 @@ import {
   Validators,
   FormControl,
 } from "@angular/forms";
-import { StateService } from "../service/state.service";
-import { UsersService } from "../service/users.service";
-import { PasswordValidator } from "../validators/password-validator";
+import { StateService } from "../../service/state.service";
+import { UsersService } from "../../service/users.service";
+import { PasswordValidator } from "../../validators/password-validator";
 
 @Component({
   selector: "app-login",
@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   password: string = "";
   inputError: boolean = false;
   loginFailure: boolean = false;
+  urlPart: any = "";
 
   //SỬ DỤNG FORMBUILDER SẼ DỌN CODE HƠN TÙY FORMCONTROL VÀ FORMBUILDER CÓ CÔNG DỤNG NHƯ NHAU
   // form: FormGroup;
@@ -44,6 +45,7 @@ export class LoginComponent implements OnInit {
       this.user = this._translateService.instant("basic.user-name");
       this.password = this._translateService.instant("basic.password");
     });
+    this.urlPart = this._usersService.url;
   }
 
   //PHẦN NAY KHI SỰ DỤNG FORM CONTROL
@@ -59,7 +61,7 @@ export class LoginComponent implements OnInit {
   });
 
   submit() {
-     console.log(this.form.value);
+    console.log(this.form.value);
 
     if (this.form.valid) {
       const data = {
@@ -81,7 +83,7 @@ export class LoginComponent implements OnInit {
 
             if (token != "Error login") {
               this._router.navigate(["/users"]);
-            } 
+            }
             console.log("login success nhu user va password");
           },
           (error) => {
@@ -92,7 +94,7 @@ export class LoginComponent implements OnInit {
         );
     } else {
       // 表单输入无效，显示错误或采取其他操作
-      this.inputError = true; // THÔNG BÁO LỖI KHI INPUT RỖNG 
+      this.inputError = true; // THÔNG BÁO LỖI KHI INPUT RỖNG
       console.log("表单输入无效，请填写正确的值");
     }
   }
