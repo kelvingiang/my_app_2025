@@ -71,6 +71,23 @@ export class GuestComponent implements OnInit {
     }
   }
 
+  // cho man hinh cam ung =================
+  // @HostListener("window:touchmove", ["$event"])
+  // onTouchMove(event: any): void {
+  //   const target = event.target;
+  //   const scrollTop = target.scrollTop;
+  //   const scrollHeight = target.scrollHeight;
+  //   const clientHeight = target.clientHeight;
+
+  //   if (
+  //     scrollHeight - scrollTop <= clientHeight &&
+  //     !this.loading &&
+  //     !this.allLoaded
+  //   ) {
+  //     this.loadMore();
+  //   }
+  // }
+
   loadMore() {
     this.loading = true;
     this.loadDataFailure = false;
