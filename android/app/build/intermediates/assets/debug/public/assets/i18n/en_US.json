@@ -23,7 +23,9 @@
     "user-name" : "User Name",
     "password" : "Password",
     "logout" : "Logout",
-    "load_more" : "Load More"
+    "load_more" : "Load More",
+    "guest" : "Guest",
+    "login" : "Login"
   },
   "btn":{
     "cancel": "Cancel",

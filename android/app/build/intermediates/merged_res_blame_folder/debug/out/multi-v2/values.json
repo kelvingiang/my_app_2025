@@ -4,22 +4,22 @@
             "outputFile": "com.app.myapp-mergeDebugResources-24:/values/values.xml",
             "map": [
                 {
-                    "source": "F:\\Angular\\my_app\\node_modules\\@capacitor\\android\\capacitor\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "source": "F:\\Angular\\my_app_2025\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "100,175,251,518",
-                        "endLines": "2,3,4,11",
-                        "endColumns": "74,75,79,22",
-                        "endOffsets": "170,246,326,628"
+                        "startLines": "4,11,18",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "93,413,664",
+                        "endLines": "9,15,20",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "407,657,810"
                     },
                     "to": {
-                        "startLines": "39,40,41,3293",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "2725,2800,2876,176998",
-                        "endLines": "39,40,41,3295",
-                        "endColumns": "74,75,79,22",
-                        "endOffsets": "2795,2871,2951,177108"
+                        "startLines": "336,342,347",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "22091,22375,22624",
+                        "endLines": "341,346,349",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "22370,22619,22770"
                     }
                 },
                 {
@@ -39,23 +39,6 @@
                         "endLines": "253,260,283,2779,2783",
                         "endColumns": "56,64,63,24,24",
                         "endOffsets": "16950,17257,18465,159236,159385"
-                    }
-                },
-                {
-                    "source": "F:\\Angular\\my_app\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "2,5,4,3",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,209,154,99",
-                        "endColumns": "43,59,54,54",
-                        "endOffsets": "94,264,204,149"
-                    },
-                    "to": {
-                        "startLines": "318,326,327,330",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "20800,21355,21415,21594",
-                        "endColumns": "43,59,54,54",
-                        "endOffsets": "20839,21410,21465,21644"
                     }
                 },
                 {
@@ -95,22 +78,22 @@
                     }
                 },
                 {
-                    "source": "F:\\Angular\\my_app\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "F:\\Angular\\my_app_2025\\node_modules\\@capacitor\\android\\capacitor\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "4,11,18",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "93,413,664",
-                        "endLines": "9,15,20",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "407,657,810"
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "100,175,251,518",
+                        "endLines": "2,3,4,11",
+                        "endColumns": "74,75,79,22",
+                        "endOffsets": "170,246,326,628"
                     },
                     "to": {
-                        "startLines": "336,342,347",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "22091,22375,22624",
-                        "endLines": "341,346,349",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "22370,22619,22770"
+                        "startLines": "39,40,41,3293",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2725,2800,2876,176998",
+                        "endLines": "39,40,41,3295",
+                        "endColumns": "74,75,79,22",
+                        "endOffsets": "2795,2871,2951,177108"
                     }
                 },
                 {
@@ -147,6 +130,23 @@
                         "startOffsets": "18302",
                         "endColumns": "53",
                         "endOffsets": "18351"
+                    }
+                },
+                {
+                    "source": "F:\\Angular\\my_app_2025\\android\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "52",
+                        "startColumns": "4",
+                        "startOffsets": "3637",
+                        "endColumns": "56",
+                        "endOffsets": "3689"
                     }
                 },
                 {
@@ -205,23 +205,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Angular\\my_app\\android\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "52",
-                        "startColumns": "4",
-                        "startOffsets": "3637",
-                        "endColumns": "56",
-                        "endOffsets": "3689"
-                    }
-                },
-                {
                     "source": "C:\\Users\\pc\\.gradle\\caches\\transforms-3\\4084e7bcb4a1738e1ff26326a1997c6e\\transformed\\core-1.10.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,98,99,103,104,105,106,112,122,155,176,209",
@@ -272,6 +255,23 @@
                         "startOffsets": "20717",
                         "endColumns": "82",
                         "endOffsets": "20795"
+                    }
+                },
+                {
+                    "source": "F:\\Angular\\my_app_2025\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,5,4,3",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,209,154,99",
+                        "endColumns": "43,59,54,54",
+                        "endOffsets": "94,264,204,149"
+                    },
+                    "to": {
+                        "startLines": "318,326,327,330",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "20800,21355,21415,21594",
+                        "endColumns": "43,59,54,54",
+                        "endOffsets": "20839,21410,21465,21644"
                     }
                 }
             ]

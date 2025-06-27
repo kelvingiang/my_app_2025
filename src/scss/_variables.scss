@@ -1,0 +1,22 @@
+$normal-color: #50a62f; //绿色
+$warning-color: #af7800; //黄色
+$error-color: #ea483e; //红色
+$link-color: #025981;
+$link-color-hover: #00691a;
+$link-color-bg: #ccc;
+$border-color: #999;
+$odd-color: #d9eef8;
+$bg-error-color: #f8462780;
+$menu-link-color: #fff;
+$menu-link-hover-color: #680202;
+$menu-bg-color: #af0000de;
+$menu-bg-hover-color: rgb(255, 255, 255);
+
+$breakpoints: (
+    xs: 0, // 預設，不用寫 media query
+    sm: 576px, // 大手機
+    md: 768px, // 平板
+    lg: 992px, // 筆電
+    xl: 1200px, // 桌機
+    xxl: 1400px  // 大桌機
+);

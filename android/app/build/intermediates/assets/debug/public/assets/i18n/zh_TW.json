@@ -24,7 +24,9 @@
     "user-name" : "賬號",
     "password" : "密碼",
     "logout" : "登出",
-    "load_more" : "加載"
+    "load_more" : "加載",
+    "guest" : "顧客",
+    "login" : "登入"
   },
   "btn": {
     "cancel": "取消",

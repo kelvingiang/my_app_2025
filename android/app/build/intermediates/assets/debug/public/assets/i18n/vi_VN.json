@@ -23,7 +23,9 @@
     "user-name" : "Tài Khoản",
     "password" : "Mật Khẩu",
     "logout" : "Đăng Xuất",
-    "load_more" : "xem Thêm"
+    "load_more" : "xem Thêm",
+    "guest" : "Khách Mời",
+    "login" : "Đăng Nhập"
   },
   "btn":{
     "cancel": "Hủy",

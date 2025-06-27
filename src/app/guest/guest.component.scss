@@ -108,6 +108,10 @@
         visibility 0.3s,
         opacity 0.3s ease;
 
+    @include respond(md) {
+        width: 90%;
+        left: 5%;
+    }
     &.open {
         visibility: visible;
         animation: popupSlideDown 0.8s ease-out forwards;
@@ -124,6 +128,7 @@
     left: 20%;
     transform: translateX(-50%);
     width: 60%;
+    height: 500px;
     background-image: linear-gradient(rgb(255, 255, 255) 80%, rgb(255, 255, 255), rgb(119, 119, 116));
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -134,6 +139,12 @@
     transition:
         visibility 0.3s,
         opacity 0.3s ease;
+
+    @include respond(md) {
+        width: 90%;
+        left: 5%;
+        height: 300px;
+    }
 
     &.open {
         visibility: visible;
@@ -240,9 +251,8 @@
 .btn-space {
     display: flex;
     flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
-    position: absolute;
+    align-content: center;
+    justify-content: center;
     bottom: 50px;
     right: 50px;
     div,
@@ -298,6 +308,5 @@ button {
     align-items: center;
     img {
         width: 20%;
-        
     }
 }

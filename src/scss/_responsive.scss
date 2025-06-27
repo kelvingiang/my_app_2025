@@ -1,0 +1,12 @@
+@mixin respond($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+    @if $breakpoint == xl {
+        @media (min-width: #{$size}) {
+            @content;
+        }
+    } @else {
+        @media (max-width: #{$size}) {
+            @content;
+        }
+    }
+}

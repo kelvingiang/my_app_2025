@@ -3,24 +3,24 @@
 3    package="com.app.myapp.test" >
 4
 5    <uses-sdk
-5-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:5:5-74
+5-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:5:5-74
 6        android:minSdkVersion="22"
-6-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:5:15-41
+6-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:5:15-41
 7        android:targetSdkVersion="33" />
-7-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:5:42-71
+7-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:5:42-71
 8
 9    <instrumentation
-9-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:11:5-15:63
+9-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:11:5-15:63
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:11:22-76
+10-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:11:22-76
 11        android:functionalTest="false"
-11-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:14:22-52
+11-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:14:22-52
 12        android:handleProfiling="false"
-12-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:13:22-53
+12-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:13:22-53
 13        android:label="Tests for com.app.myapp"
-13-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:15:22-61
+13-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:15:22-61
 14        android:targetPackage="com.app.myapp" />
-14-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:12:22-59
+14-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:12:22-59
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] C:\Users\pc\.gradle\caches\transforms-3\ec985eb774b6e2f8fedbaa0cecaad627\transformed\core-1.5.0\AndroidManifest.xml:24:5-72
@@ -40,10 +40,10 @@
 22    </queries>
 23
 24    <application android:debuggable="true" >
-24-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:7:5-9:19
+24-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:7:5-9:19
 25        <uses-library android:name="android.test.runner" />
-25-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:8:9-60
-25-->F:\Angular\my_app\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9102256836971391577.xml:8:23-57
+25-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:8:9-60
+25-->F:\Angular\my_app_2025\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9194265438541870159.xml:8:23-57
 26
 27        <activity
 27-->[androidx.test:core:1.5.0] C:\Users\pc\.gradle\caches\transforms-3\ec985eb774b6e2f8fedbaa0cecaad627\transformed\core-1.5.0\AndroidManifest.xml:27:9-34:20
