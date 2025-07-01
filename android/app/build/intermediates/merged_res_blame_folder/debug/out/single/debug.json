@@ -168,12 +168,12 @@
         "source": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-main-28:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-merged_res-26:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-main-28:\\mipmap-xhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-merged_res-26:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-main-28:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-merged_res-26:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\8.0.2\\com.app.myapp-main-28:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "com.app.myapp-merged_res-26:/mipmap-xxxhdpi_ic_launcher_round.png.flat",

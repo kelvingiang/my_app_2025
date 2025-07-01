@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.app.myapp',
-  appName: 'my-app',
+  appName: 'digiwin',
   webDir: 'dist',
   server: {
     androidScheme: 'https'

@@ -1,16 +1,13 @@
-<h5>Guests này post và Put data chỉ dùng API-KEY thông qua chuyển từ headers</h5>
+<h5 style="color: blue;">Guests này post và Put data chỉ dùng API-KEY thông qua chuyển từ headers</h5>
 <h5>get data from : {{dataFrom}}</h5>
 <div>
     <div *ngIf="!loadDataFailure">
         <div class="add-new">
             <button (click)="addNew()">Add New</button>
         </div>
+
         <!-- them phan class de tao thanh cuon -->
         <div class="scroll-container" (scroll)="onScroll($event)">
-
-
-
-
             <div class="guest-list">
                 <div class="list-item" *ngFor="let item of AdList; trackBy: trackById">
                     <div> {{item.serialNumber +'---'+ item.barcode + ' -- ' + item.fullName}}</div>

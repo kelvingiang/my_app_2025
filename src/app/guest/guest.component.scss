@@ -1,5 +1,11 @@
 @import "./../../styles.scss";
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .guest-list {
     display: flex;
     flex-direction: column;
@@ -46,10 +52,11 @@
 }
 
 .scroll-container {
-    height: 500px;
+    height: 100vh;
     overflow-y: auto;
     border: 1px solid #ccc;
-    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
 }
 
 .list-item {
@@ -207,7 +214,7 @@
 
 .guest-detail {
     h1 {
-        color: red;
+        color: rgba(3, 72, 175, 0.842);
         margin: 1rem;
     }
     .img {

@@ -56,6 +56,8 @@ export class GuestComponent implements OnInit {
     this.loadMore();
   }
 
+  // cho man hinh cam ung =================
+  @HostListener('window:scroll', [])
   onScroll(event: any): void {
     const target = event.target;
     const scrollTop = target.scrollTop;
@@ -63,7 +65,7 @@ export class GuestComponent implements OnInit {
     const clientHeight = target.clientHeight;
 
     if (
-      scrollHeight - scrollTop <= clientHeight &&
+      scrollHeight - scrollTop <= clientHeight + 30 &&
       !this.loading &&
       !this.allLoaded
     ) {
@@ -71,16 +73,20 @@ export class GuestComponent implements OnInit {
     }
   }
 
-  // cho man hinh cam ung =================
-  // @HostListener("window:touchmove", ["$event"])
-  // onTouchMove(event: any): void {
-  //   const target = event.target;
-  //   const scrollTop = target.scrollTop;
-  //   const scrollHeight = target.scrollHeight;
-  //   const clientHeight = target.clientHeight;
+    /**
+   * ✅ 視窗滾動監聽（手機、桌面全支援）
+   */
+  // @HostListener('window:scroll', [])
+  // onWindowScroll(): void {
+  //   const scrollTop = window.scrollY 
+  //     || document.documentElement.scrollTop 
+  //     || document.body.scrollTop 
+  //     || 0;
+  //   const scrollHeight = document.documentElement.scrollHeight;
+  //   const clientHeight = document.documentElement.clientHeight;
 
   //   if (
-  //     scrollHeight - scrollTop <= clientHeight &&
+  //     scrollHeight - scrollTop <= clientHeight + 30 &&
   //     !this.loading &&
   //     !this.allLoaded
   //   ) {
