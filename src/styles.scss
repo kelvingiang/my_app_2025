@@ -1,5 +1,6 @@
 @import './scss/_variables.scss';
 @import './scss/_responsive.scss';
+@import './scss/_main.scss';
 /* You can add global styles to this file, and also import other style files */
 .my-button{
     cursor: pointer;
@@ -37,3 +38,4 @@ h1{
         outline: none; // 去掉預設的聚焦邊框
       }
 }
+

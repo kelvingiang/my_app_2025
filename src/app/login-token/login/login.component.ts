@@ -61,8 +61,6 @@ export class LoginComponent implements OnInit {
   });
 
   submit() {
-    console.log(this.form.value);
-
     if (this.form.valid) {
       const data = {
         username: this.form.value.username,

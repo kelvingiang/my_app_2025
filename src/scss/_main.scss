@@ -1,0 +1,27 @@
+.btn-space {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    &:hover {
+        opacity: 0.8;
+        color: #999;
+    }
+    margin: 0.5rem 1rem;
+}
+
+.btn-primary {
+    background-color: #01569b;
+}
