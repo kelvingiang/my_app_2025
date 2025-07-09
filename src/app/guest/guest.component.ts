@@ -35,7 +35,7 @@ export class GuestComponent implements OnInit {
   GuestUpdate: any = [];
   errorMessage: string = "";
   loadDataFailure: boolean = true;
-  dataFrom = environment.API_GUEST;
+  dataFrom = environment.API_URL;
 
   state = {
     modalGuest: false,

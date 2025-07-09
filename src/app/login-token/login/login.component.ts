@@ -11,6 +11,7 @@ import {
 import { StateService } from "../../service/state.service";
 import { UsersService } from "../../service/users.service";
 import { PasswordValidator } from "../../validators/password-validator";
+import { TokenService } from "../../service/token.service";
 
 @Component({
   selector: "app-login",
@@ -22,7 +23,7 @@ export class LoginComponent implements OnInit {
   password: string = "";
   inputError: boolean = false;
   loginFailure: boolean = false;
-  urlPart: any = "";
+  URL: any = "";
 
   //SỬ DỤNG FORMBUILDER SẼ DỌN CODE HƠN TÙY FORMCONTROL VÀ FORMBUILDER CÓ CÔNG DỤNG NHƯ NHAU
   // form: FormGroup;
@@ -33,7 +34,8 @@ export class LoginComponent implements OnInit {
     private _usersService: UsersService,
     private _router: Router,
     private _stateService: StateService,
-    private _formBuilder: FormBuilder
+    private _formBuilder: FormBuilder,
+    private _tokenService: TokenService
   ) {
     this._translateService.get;
   }
@@ -45,7 +47,7 @@ export class LoginComponent implements OnInit {
       this.user = this._translateService.instant("basic.user-name");
       this.password = this._translateService.instant("basic.password");
     });
-    this.urlPart = this._usersService.url;
+    this.URL = this._usersService.url + "page/login/";
   }
 
   //PHẦN NAY KHI SỰ DỤNG FORM CONTROL
@@ -67,29 +69,28 @@ export class LoginComponent implements OnInit {
         password: this.form.value.password,
       };
 
-      this._http
-        .post<any>(this._usersService.url + "token-login.php", data)
-        .subscribe(
-          (response) => {
-            // 处理登录成功的响应
-            const token = response.token;
+      this._http.post<any>(this.URL + "token-login.php", data).subscribe(
+        async (response) => {
+          // 处理登录成功的响应
+          // const token = response.token;
+          // 发起受令牌保护的请求
+          if (response.error) {
+            this.loginFailure = true;
+            console.log("登入失敗，錯誤訊息:", response.error);
+          } else if (response.token) {
+            console.log("登入成功", response.error);
             // 存储令牌
-            localStorage.setItem("token", token);
-            // const getToken = localStorage.getItem("token");
-            // console.log("doc lai token dc luu o local :" + getToken);
-            // 发起受令牌保护的请求
-
-            if (token != "Error login") {
-              this._router.navigate(["/users"]);
-            }
-            console.log("login success nhu user va password");
-          },
-          (error) => {
-            this.loginFailure = true; // THÔNG BÁO LỖI KHI NHẬP SAI THÔNG TIN LOGIN
-            // 处理登录失败的响应
-            console.log("登入失败", error);
+            await this._tokenService.saveToken(response.token);
+            this._router.navigate(["/users"]);
           }
-        );
+          console.log("login success nhu user va password");
+        },
+        (error) => {
+          this.loginFailure = true; // THÔNG BÁO LỖI KHI NHẬP SAI THÔNG TIN LOGIN
+          // 处理登录失败的响应
+          console.log("伺服器連線錯誤", error);
+        }
+      );
     } else {
       // 表单输入无效，显示错误或采取其他操作
       this.inputError = true; // THÔNG BÁO LỖI KHI INPUT RỖNG

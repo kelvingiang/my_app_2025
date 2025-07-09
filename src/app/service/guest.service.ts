@@ -10,7 +10,7 @@ import { map, catchError } from "rxjs/operators";
   providedIn: "root",
 })
 export class GuestService {
-  public url = environment.API_GUEST;
+  public url = environment.API_URL + "page/guest/";
   private apiKey = environment.API_CODE; // 定義 API_key
 
   constructor(private _http: HttpClient, private _route: Router) {}

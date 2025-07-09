@@ -18,6 +18,7 @@ INJECTED from F:\Angular\my_app_2025\android\app\src\main\AndroidManifest.xml:4:
 MERGED from [:capacitor-cordova-android-plugins] F:\Angular\my_app_2025\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-11:12
 MERGED from [:capacitor-camera] F:\Angular\my_app_2025\node_modules\@capacitor\camera\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-13:12
 MERGED from [:capacitor-filesystem] F:\Angular\my_app_2025\node_modules\@capacitor\filesystem\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:capacitor-storage] F:\Angular\my_app_2025\node_modules\@capacitor\storage\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\pc\.gradle\caches\transforms-4\64697f4d1b78961572b6663e6f44368e\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\pc\.gradle\caches\transforms-4\b799a0fbfc476549233e63085be6f92f\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [:capacitor-android] F:\Angular\my_app_2025\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
@@ -176,6 +177,8 @@ MERGED from [:capacitor-camera] F:\Angular\my_app_2025\node_modules\@capacitor\c
 MERGED from [:capacitor-camera] F:\Angular\my_app_2025\node_modules\@capacitor\camera\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-filesystem] F:\Angular\my_app_2025\node_modules\@capacitor\filesystem\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-filesystem] F:\Angular\my_app_2025\node_modules\@capacitor\filesystem\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:capacitor-storage] F:\Angular\my_app_2025\node_modules\@capacitor\storage\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:capacitor-storage] F:\Angular\my_app_2025\node_modules\@capacitor\storage\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\pc\.gradle\caches\transforms-4\64697f4d1b78961572b6663e6f44368e\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\pc\.gradle\caches\transforms-4\64697f4d1b78961572b6663e6f44368e\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\pc\.gradle\caches\transforms-4\b799a0fbfc476549233e63085be6f92f\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
