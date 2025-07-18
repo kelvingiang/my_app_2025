@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, HostListener } from "@angular/core";
 import { UsersService } from "../../service/users.service";
 import { TokenService } from "../../service/token.service";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
@@ -13,7 +13,10 @@ import * as jwt_decode from "jwt-decode";
 export class UsersComponent implements OnInit {
   list: any = [];
   tokenLocal: any = null;
-  API_URL : any = "";
+  API_URL: any = "";
+
+  private idleTimeout: any;
+  private idleTimeLimit = 10 * 60 * 1000; // 10 分鐘 = 600,000 毫秒
 
   constructor(
     private _usersService: UsersService,
@@ -27,7 +30,7 @@ export class UsersComponent implements OnInit {
     this.tokenLocal = await this._tokenService.getToken(); // lấy giá trị token được lưu trong localStorage
     const tokenLocal = await this._tokenService.getToken(); // lấy giá trị token được lưu trong localStorage
     const url = this._usersService.url; // lấy value URL của userService
-    this.API_URL  = url;
+    this.API_URL = url;
     const url_aip = url + "/page/login/";
     // kiểm tra tokenLocal nếu bằng rỗng sẽ chuyển về trang mặc định
     // ngược lại sẽ lên server kiểm tra token
@@ -44,7 +47,7 @@ export class UsersComponent implements OnInit {
     // chuyển dữ liệu kiểm tra token bằng cách chuyền data
     const oldToken = { token: tokenLocal };
 
-    this._http.post<any>(url_aip  + "token-check.php", oldToken).subscribe(
+    this._http.post<any>(url_aip + "token-check.php", oldToken).subscribe(
       async (response) => {
         // 处理登录成功的响应
         const token = response.token; // lấy token trả về
@@ -73,7 +76,9 @@ export class UsersComponent implements OnInit {
               this._http.get<any>(apiUrl, { headers }).subscribe(
                 async (newToken) => {
                   // 将 newToken 存储或使用
-                  const newDecodedToken: any = jwt_decode.default(newToken.new_token);
+                  const newDecodedToken: any = jwt_decode.default(
+                    newToken.new_token
+                  );
                   await this._tokenService.saveToken(newToken.new_token);
                   console.log(newDecodedToken.expire + " Gio Update Token");
                   console.log(newDecodedToken);
@@ -102,7 +107,7 @@ export class UsersComponent implements OnInit {
         this._usersService.getUserData().subscribe(
           (response) => {
             // console.log(response);
-             this.list = response.data ?? []; // 避免 null 出錯
+            this.list = response.data ?? []; // 避免 null 出錯
           },
           (error) => {
             console.log("Log the error here: ", error);
@@ -114,6 +119,26 @@ export class UsersComponent implements OnInit {
         console.error("登录失败++", error);
       }
     );
+    this.resetIdleTimer(); // 初始化計時器
+  }
+
+    // 監聽滑鼠移動、點擊、鍵盤按下等事件
+  @HostListener('document:mousemove')
+  @HostListener('document:keydown')
+  @HostListener('document:click')
+  handleUserActivity(): void {
+    this.resetIdleTimer();
+  }
+
+  private resetIdleTimer(): void {
+    if (this.idleTimeout) {
+      clearTimeout(this.idleTimeout);
+    }
+
+    this.idleTimeout = setTimeout(() => {
+      console.log('使用者閒置超過 10 分鐘，自動刷新頁面');
+      location.reload();
+    }, this.idleTimeLimit);
   }
 
   onclickLogout() {
