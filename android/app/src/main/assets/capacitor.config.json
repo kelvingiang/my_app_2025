@@ -1,9 +1,8 @@
 {
-	"appId": "com.app.myapp",
+	"appId": "com.kelvin.myapp2025",
 	"appName": "digiwin",
-	"webDir": "dist",
+	"webDir": "dist/digiwin-app",
 	"server": {
 		"androidScheme": "https"
-	},
-	"android": {}
+	}
 }

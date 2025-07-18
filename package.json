@@ -10,7 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "@agm/core": "^3.0.0-beta.0",
     "@angular/animations": "^16.0.0",
     "@angular/common": "^16.0.0",
     "@angular/compiler": "^16.0.0",
@@ -23,7 +22,8 @@
     "@capacitor/camera": "^7.0.1",
     "@capacitor/core": "^7.4.2",
     "@capacitor/filesystem": "^7.1.1",
-    "@capacitor/storage": "^1.2.5",
+    "@capacitor/ios": "^7.4.2",
+    "@capacitor/preferences": "^7.0.1",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
     "jwt-decode": "^3.1.2",
