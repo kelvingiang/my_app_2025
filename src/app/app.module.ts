@@ -46,7 +46,7 @@ import { LoadMoreComponent } from "./load-more/load-more.component";
 import { ReadXmlComponent } from './read-xml/read-xml.component';
 // import { ScheduleComponent } from './wordpress/schedule/schedule.component';
 
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 import { GuestComponent } from './guest/guest.component';
 
 @NgModule({

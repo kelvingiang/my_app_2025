@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 
 declare const google: any;
 @Component({

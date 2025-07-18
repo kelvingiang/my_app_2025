@@ -6,3 +6,5 @@ yarn-error.log
 .angular/
 tmp/
 out-tsc/
+.DS_Store
+

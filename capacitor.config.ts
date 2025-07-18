@@ -1,14 +1,11 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.app.myapp',
+  appId: 'com.kelvin.myapp2025',
   appName: 'digiwin',
-  webDir: 'dist',
+  webDir: 'dist/digiwin-app',
   server: {
     androidScheme: 'https'
-  },
-  "android": {
-    // "path": ""  // 或者完全刪除這行
   },
 };
 

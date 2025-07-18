@@ -25,7 +25,7 @@ import { ChildOnChangesComponent } from "./onchanges/child-onchanges/child.compo
 import { AfterContentComponent } from "./aftercontent/aftercontent.component";
 import { ChildAfterContentComponent } from "./aftercontent/child-aftercontent/child.component";
 import { ScrollComponent } from "./scroll/scroll.component";
-import { LocalMapComponent } from "./map-local/local-map.component";
+// import { LocalMapComponent } from "./map-local/local-map.component";
 import { AgmComponent } from "./map-agm/agm.component";
 
 
@@ -52,7 +52,7 @@ import { MenuNgangComponent } from './menu-ngang/menu-ngang.component';
     AfterContentComponent,
     ChildAfterContentComponent,
     ScrollComponent,
-    LocalMapComponent,
+    // LocalMapComponent,
     AgmComponent,
     MenuNgangComponent,
   ],
